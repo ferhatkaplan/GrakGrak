@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --main-color: #f5f2ea;
+  --black-color: #050302;
+  --border: 0.1rem solid rgba (255, 255, 255, 0.4);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+
+/* base html codes*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+.btn {
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: #f5f2ea;
+  background-color: var(--black-color);
+}
+
+/* header start */
+.logo img {
+  height: 10rem;
+}
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--black-color);
+  padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+/* header end */
+
+/* home start */
+.home {
+  min-height: 100vh;
+  background: url(../images/brownbag.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -14rem;
+  display: flex;
+  align-items: center;
+}
+
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  font-size: 4rem;
+  color: #d1552f;
+}
+.home .content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #ffc700;
+}
+/* home end */
+
+/*! menu start */
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.2rem;
+}
+
+.menu .box-container .box {
+  padding: 2rem;
+  background-color: #ffff;
+  border-radius: 3rem;
+  background-color: #ffff;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu .box-container .box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.param {
+  min-height: 100vh;
+  background: url(../images/calarsaa.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -9rem;
+  display: flex;
+  align-items: center;
+}
+
+.param .passife {
+  max-width: 60rem;
+}
+
+.param .passife h1 {
+  font-size: 5rem;
+  color: #d1552f;
+}
+
+.param .passife p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #ffc700;
+}
+
+/* menu end */
