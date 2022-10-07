@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
-  --main-color: #f5f2ea;
+  --main-color: #f5f5dc;
   --black-color: #050302;
   --border: 0.1rem solid rgba (255, 255, 255, 0.4);
 }
@@ -36,16 +36,50 @@ section {
 .btn {
   display: inline-block;
   padding: 2rem 3.75rem;
-  border-radius: 30rem;
+  border-radius: 15rem;
   font-size: 1.7rem;
-  color: #f5f2ea;
-  background-color: var(--black-color);
+  color: #000;
+  background-color: #d1552f;
+  cursor: pointer;
 }
 
 /* header start */
+
+.header .search-form {
+  position: absolute;
+  padding: 2rem;
+  top: 115%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 25px 2px rgba(0 0 0 / 75%);
+  transform: scaleY(0);
+}
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+.header .search-form i {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black-color);
+}
+
+.header .search-form input{
+    width: 100%;
+}
+
+
+
 .logo img {
   height: 10rem;
 }
+
 .header {
   background-color: white;
   display: flex;
@@ -77,6 +111,10 @@ section {
   font-size: 2.5rem;
   margin-left: 2rem;
   background-color: transparent;
+}
+
+#menu-btn {
+  display: none;
 }
 /* header end */
 
@@ -159,4 +197,299 @@ section {
   color: #ffc700;
 }
 
+.ref h1 {
+  font-size: 5rem;
+  color: #d1552f;
+}
+.ref .referans {
+  display: flex;
+  align-items: center;
+}
+
+.ref .referans .hacettepe {
+  margin-right: 7rem;
+  margin-left: 1rem;
+}
+
+.ref .referans .cekirdek {
+  margin-right: 7rem;
+  background-position: center;
+}
+
 /* menu end */
+
+/* products start */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+}
+.products h1 {
+  font-size: 4rem;
+  color: #050302;
+  margin-top: auto;
+  text-align: center;
+  font-weight: bold;
+}
+.products .box-container {
+  text-align: center;
+  background-color: #d1552f;
+  border-radius: 2rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+/* products end */
+/* about start */
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row img {
+  width: 75%;
+  margin: auto;
+}
+.about .row .content h2 {
+  font-size: 3rem;
+  color: #d1552f;
+}
+
+.about .row .content h3 {
+  font-size: 2rem;
+  color: #d1552f;
+}
+
+.about .row .btn {
+  display: inline-block;
+  padding: 1rem 1rem;
+  border-radius: 15rem;
+  font-size: 1rem;
+  color: #000;
+  background-color: #d1552f;
+}
+/* about end */
+/* review start */
+.review h1 {
+  font-size: 3rem;
+  color: #d1552f;
+}
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.review .box-container .box {
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+.review .box-container .box p {
+  color: #d1552f;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding: 2rem 0;
+}
+.review .box-container .box .user {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review .box-container .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #d1552f;
+}
+
+.review .box-container .box .stars i {
+  font-size: 1.5rem;
+  color: #ffc700;
+}
+/* review end */
+/*indir start*/
+.indir .bilgi h1 {
+  font-size: 3rem;
+  color: #d1552f;
+}
+
+.indir .bilgi h3 {
+  font-size: 1rem;
+  color: #d1552f;
+}
+
+.indir .bilgi h2 {
+  font-size: 2rem;
+  color: #d1552f;
+}
+/*indir end*/
+/* contact start */
+
+.contact .row {
+  display: flex;
+  background-color: #000;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #d1552f;
+}
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  border: var(--border);
+}
+
+.contact .row form .inputBox i {
+  color: #d1552f;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #ee580d;
+  border-radius: 2rem;
+  text-transform: none;
+  background-color: wheat;
+}
+.contact .row form .btn {
+  font-size: 2rem;
+}
+/* contact end */
+/* footer start */
+
+.footer .search .btn {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
+.footer {
+  background-color: var(--black-color);
+  text-align: center;
+}
+
+.footer .search {
+  display: flex;
+  justify-content: center;
+  text-transform: none;
+}
+.footer .search .search-input {
+  width: 15rem;
+  background-color: wheat;
+  border-radius: 2rem;
+}
+.footer .share {
+  padding: 2rem 0;
+}
+
+.footer .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: #d1552f;
+  font-size: 3rem;
+  margin: 0.3rem;
+}
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer .links a {
+  background-color: #d1552f;
+  padding: 0.7rem 2rem;
+  color: #050302;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+
+.footer .links a:hover {
+  background-color: #ffc700;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: #d1552f;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+.footer .credit .GrakGrak {
+  font-size: 2rem;
+  color: #ffc700;
+}
+/* footer end */
+
+/*! responsive start*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .logo img {
+    height: 7rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  .products .box-container .box .box-head .name {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 95%;
+    background-color: white;
+    height: calc(100vh - 9rem);
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgba(0 0 0 / 75%);
+    right: -100%;
+  }
+  .header .navbar.active {
+    right: 3rem;
+  }
+
+  .header .navbar a {
+    color: #d1552f;
+    display: block;
+    margin: 1.5rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+/*! responsive end*/

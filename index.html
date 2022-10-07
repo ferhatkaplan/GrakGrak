@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    
     <!-- header start -->
     <header class="header">
       <a href="#">
         <img src="images/logo.png" alt="logo" />
       </a>
-      <nav class="navbar">
+      <nav class="navbar ">
         <a href="#" class="active">Anasayfa</a>
         <a href="#">Blog</a>
         <a href="#">Nasıl Kullanılır?</a>
@@ -32,10 +33,16 @@
         </button>
         <button>
           <i class="fa-solid fa-truck"></i>
-          <button>
+          <button id="menu-btn">
             <i class="fas fa-bars"></i>
           </button>
         </button>
+      </div>
+      <div class="search-form #active">
+        <input type="text" class="search-input" 
+        id="search-box"
+         placeholder="ara">
+         <i class="fas fa-search"></i>
       </div>
     </header>
     <!-- header end -->
@@ -111,7 +118,7 @@
     </section>
     <!-- menu end -->
     <br /><br /><br /><br />
-    <!-- products start -->
+    <!-- param start -->
     <section class="param">
       <div class="passife">
         <h1>Artık Sıkılmadınız Mı?</h1>
@@ -121,13 +128,247 @@
           Kargonuzu takip edememekten?
         </p>
         <a href="https://apps.apple.com/us/app/grakgrak-cargo/id1611564797">
-            <img width="150" height="44" alt="GrakGrak Cargo, sürdürülebilir kargo, para kazanma, travel, hızlı kargo, gizli kargo, uygun kargo, ucuz kargo, anlık takip, hızlı teslimat, taşırken kazan, seyahat ederken taşı" data-srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png 300w, https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore.png 306w" data-src="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png" data-sizes="(max-width: 300px) 100vw, 300px" class="attachment-medium size-medium ls-is-cached lazyloaded" src="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png 300w, https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore.png 306w">								</a>
-            <a href="https://play.google.com/store/apps/details?id=com.raven.ravenlogistics">
-                <img width="150" height="44" alt="sürdürülebilir kargo, para kazanma, travel, hızlı kargo, gizli kargo, uygun kargo, ucuz kargo, anlık takip, hızlı teslimat, taşırken kazan, seyahat ederken taşı" data-srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png 564w, https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay-300x89.png 300w" data-src="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png" data-sizes="(max-width: 564px) 100vw, 564px" class="attachment-large size-large ls-is-cached lazyloaded" src="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png" sizes="(max-width: 564px) 100vw, 564px" srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png 564w, https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay-300x89.png 300w">								</a>
+          <img
+            width="150"
+            height="44"
+            alt="GrakGrak Cargo, sürdürülebilir kargo, para kazanma, travel, hızlı kargo, gizli kargo, uygun kargo, ucuz kargo, anlık takip, hızlı teslimat, taşırken kazan, seyahat ederken taşı"
+            data-srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png 300w, https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore.png 306w"
+            data-src="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png"
+            data-sizes="(max-width: 300px) 100vw, 300px"
+            class="attachment-medium size-medium ls-is-cached lazyloaded"
+            src="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png"
+            sizes="(max-width: 300px) 100vw, 300px"
+            srcset="
+              https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png 300w,
+              https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore.png        306w
+            "
+          />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.raven.ravenlogistics"
+        >
+          <img
+            width="150"
+            height="44"
+            alt="sürdürülebilir kargo, para kazanma, travel, hızlı kargo, gizli kargo, uygun kargo, ucuz kargo, anlık takip, hızlı teslimat, taşırken kazan, seyahat ederken taşı"
+            data-srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png 564w, https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay-300x89.png 300w"
+            data-src="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png"
+            data-sizes="(max-width: 564px) 100vw, 564px"
+            class="attachment-large size-large ls-is-cached lazyloaded"
+            src="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png"
+            sizes="(max-width: 564px) 100vw, 564px"
+            srcset="
+              https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png        564w,
+              https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay-300x89.png 300w
+            "
+          />
+        </a>
+      </div>
+    </section>
+    <!-- param end -->
+    <!-- referans start -->
+    <section class="ref">
+      <h1>Referanslarımız</h1>
+      <div class="referans">
+        <div class="hacettepe">
+          <img src="images/hacettepeTeknokentLogo-1-300x88.png" alt="" />
+        </div>
+        <div class="cekirdek">
+          <img src="images/cekirdeklogo-guncel-300x95.png" alt="" />
+        </div>
+        <div class="ankara"><img src="images/logo-1.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- referans end -->
+    <!-- products start -->
+    <section class="products">
+        <div class="box-container">
+        <div class="box">  
+            <div class="box-head">
+              <h1>39 ÜLKE</h1>
+            </div>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <div class="box-head">
+              <h1>15,012 ÜYE</h1>
+            </div>
+        </div>
+        </div>
+        <div class="box-container">
+        <div class="box">
+            <div class="box-head">
+              <h1>569 KARGO</h1>
+            </div>
+        </div>
         </div>
     </section>
-    <!-- products end -->
+    <!-- products ends -->
+    <!-- about start -->
+    <section class="about">
+        <div class="row">
+            <div class="image">
+                <img src="images/yellowBag.png" alt="about">
+            </div>
+            <div class="content">
+                <h2>GrakGrak Cargo Nasıl Çalışır?</h2>
+                <p>
+                    Bugünkü yazımızda GrakGrak Cargo’nun nasıl çalıştığından, dünyaya faydalarından ve uygulamalarımızdan nasıl yararlanabileceğinizden bahsedeceğiz.  
+GrakGrak kargo herkesin uygun fiyatla kargo gönderebilmesi için kurulan çift taraflı kazan kazan mekanizmasıyla oluşturulmuş  yepyeni bir ekosistemdir. Seyahat ederken para kazanmak isteyen kişileri, uygun fiyatlı kargo göndermek isteyen kişilerle buluşturur. Kargo gönderme sistemi yalnızca işlerinizi kolaylaştırmakla kalmaz, sürdürülebilir kargo ile kargo sektörüne önemli katkılarda bulunur. GrakGrak yenilikçi yaklaşımlarıyla hem doğayı hem de kargonuzu korur. Klasik kargoculuk sistemi ile değil, size kargolarınızla birebir ilgilenme fırsatı sunarken, bir yandan da karbon emisyonunu azaltarak dünyaya ve ekosisteme katkıda bulunmanızı sağlar.
+Aynı zamanda seyahat ederken para kazanmak istiyor ancak bir türlü aklınıza yatan bir fikir bulamıyorsanız yalnızca yanınızda bir paketle seyahat ederek ek gelir elde edebilir ve daha sık seyahate edebilirsiniz. Aşağıda vereceğimiz başlıklarda hem kargo paylaşımı hem de kuryeler ile ilgili daha detaylı bilgilere değineceğiz. 
+               <h3>GrakGrak Kargo Nedir?</h3>
+               GrakGrak kargo yeni kurulmuş sürdürülebilir kargo şirketidir. Sürdürülebilir kargo ise doğaya en az zararı vererek kargo teslimatı yapmanızı kolaylaştırır. Klasik kargo firmaları kargoların taşınması için karbon emisyonunun artmasına sebep olur. GrakGrak kargo ise kargoyu bir bölgeden diğer bölgeye göndermek için ekstra karbon emisyonunun önüne geçer. Bunu yaparken de seyahat ederek para kazanmak isteyen kuryelerle kargonuzun hem uygun fiyatlı hem de doğa dostu yollarla alıcıya ulaşmasını sağlar. 
+                <h3>GrakGrak İle Kargomu Nasıl Yollayabilirim?</h3>
+                GrakGrak kargo hizmetinden faydalanmak isterseniz yapmanız gerekenler çok basit! GrakGrak uygulamasına veya web sitesine girin, size uygun olan kuryeyi seçin. Anlık kargo takip sistemi ile kargonuzun nerede olduğunu takip edebilir, aklınıza takılan bir soru olursa kurye ile iletişime geçebilirsiniz. Bununla birlikte size uygun kuryeyi belirlemeden önce kurye puanlamalarından yararlanabilirsiniz. 
+GrakGrak kargonuzla birebir ilgilenme şansı tanır. Kargo esnasında yüzlerce paket arasında sıkışıp gitmez, kargonuzu belirsiz bir kuryeye değil, kendi belirlediğiniz kişilere emanet edersiniz.  
+                <h3>Nasıl GrakGrak Kuryesi Olurum?</h3>
+                Seyahat ederken taşı, taşırken kazan sloganıyla çıktığımız bu yolda seyahati seven kişilere ek gelir elde etme şansı sunuyoruz. Seyahat için belirlediğiniz tarihlerde, bulunduğunuz şehirden gitmek istediğiniz şehre kargo taşıyabilirsiniz. Bunun için de tek yapmanız gereken GrakGrak web sitesi veya uygulamasına kurye unvanıyla üye olmaktır. Sonraki adımlarda kargo teslim etmek isteyen kişilerle iletişime geçebilir ve seyahat ederken para kazanabilirsiniz. 
+Kargo sayısı sizin tarafınızdan belirlenir. Kargo taşıma işlemi gerektiği durumlarda diğer kargolarla bagaj paylaşımı gerektirebilir. Ancak bu durum tamamen sizin insiyatifinizde gerçekleşecektir.
+Kuryelik için herhangi bir araç standardı yoktur. İster motorunuzla, ister arabanızla kuryelik yapmanız mümkündür. 
+                <h3>Küçük İşletmeler İçin GrakGrak</h3>
+                GrakGrak yalnızca bireysel kargolar için değil, küçük işletmeler için de oldukça faydalı bir uygulamadır. Günümüzde kargo fiyatları gittikçe artarken iade kargolarla birlikte büyüyen kargo masrafları küçük işletmeleri daha iyi seçenekler aramaya iter. Bu noktada GrakGrak küçük işletmelerin de imdadına koşar. Uygun fiyatlı kargo imkânıyla küçük işletmeleri büyük bir masraftan kurtarır. Bununla birlikte hızlı teslimat imkânıyla kargonuz gecikmez ve kargonuz aynı gün alıcıya teslim edilebilir. 
+Kargo taşıma sırasında gönderdiğiniz paketlerin gizliliğinden endişe etmenize gerek kalmaz. Diğer kargo firmalarında kendi kuryenizi seçme imkânınız yokken GrakGrak ile istediğiniz kuryeyi belirleyebilir ve hatta paketin nasıl ulaştırılması gerektiği hakkında kuryeyi bilgilendirebilirsiniz. 
+                </p>
+                <a href="#" class="btn">Devamını Gör</a>
+            </div>
+        </div>
+    </section>
+    <!-- about ends -->
+    <!-- review start -->
+    <section class="review">
+        <h1>Kullanıcı Yorumları</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/tik.png" alt="">
+                <p>"Çok iyi düşünülmüş bir sistem. Kimin aklına geldiyse tebrik ediyorum. Üzerine düşünülüp geliştirilebilir. Ben kullandım, güvenilir de."</p>
+            <img src="images/avatar1.png" alt="avatar1" class="user">
+            <h3>Begüm Adıyaman</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            </div>
+            
+            <div class="box">
+                <img src="images/tik.png" alt="">
+                <p>“Kargolarınızı güvenli bir şekilde ve uygun fiyata göndermek istiyorsanız bence bu uygulamayı denemelisiniz hem güvenilir hem hızlılar çok memnun kaldım.”</p>
+            <img src="images/avatar3.png" alt="avatar1" class="user">
+            <h3>Ferhat Kaplan</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            </div>  
+        </div>
+    </section>
+    <!-- review end -->
+    <!-- indir start -->
+    <section class="indir">
+        <div class="bilgi">
+            <h1>Uygun Fiyatlar</h1>
+            <h3>Hızlı teslimat, taşıyanı seçme, kargo seçme, taşıyanla iletişime geçme, kolay ödeme alma...</h3>
+            <h2>Şimdi GrakGrak Cargo’yu indir İlk Kargon Bizden Olsun</h2>
+            <a href="https://apps.apple.com/us/app/grakgrak-cargo/id1611564797">
+                <img
+                  width="150"
+                  height="44"
+                  alt="GrakGrak Cargo, sürdürülebilir kargo, para kazanma, travel, hızlı kargo, gizli kargo, uygun kargo, ucuz kargo, anlık takip, hızlı teslimat, taşırken kazan, seyahat ederken taşı"
+                  data-srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png 300w, https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore.png 306w"
+                  data-src="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png"
+                  data-sizes="(max-width: 300px) 100vw, 300px"
+                  class="attachment-medium size-medium ls-is-cached lazyloaded"
+                  src="https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                  srcset="
+                    https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore-300x88.png 300w,
+                    https://grakgrakcargo.com/wp-content/uploads/2022/07/appstore.png        306w
+                  "
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.raven.ravenlogistics"
+              >
+                <img
+                  width="150"
+                  height="44"
+                  alt="sürdürülebilir kargo, para kazanma, travel, hızlı kargo, gizli kargo, uygun kargo, ucuz kargo, anlık takip, hızlı teslimat, taşırken kazan, seyahat ederken taşı"
+                  data-srcset="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png 564w, https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay-300x89.png 300w"
+                  data-src="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png"
+                  data-sizes="(max-width: 564px) 100vw, 564px"
+                  class="attachment-large size-large ls-is-cached lazyloaded"
+                  src="https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png"
+                  sizes="(max-width: 564px) 100vw, 564px"
+                  srcset="
+                    https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay.png        564w,
+                    https://grakgrakcargo.com/wp-content/uploads/2022/07/googleplay-300x89.png 300w
+                  "
+                />
+              </a>
+        </div>
 
-    
+    </section>
+    <!-- indir end -->
+
+    <!-- contact start -->
+    <section class="contact">
+        <h1>Bize Ulaşın</h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12250.242602382643!2d32.7381073!3d39.8616779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab75453f564af905!2sHacettepe%20Teknokent%20%C4%B0LKO%20ARGEM%20Binas%C4%B1!5e0!3m2!1str!2str!4v1665097066543!5m2!1str!2str"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form>
+                <h3>Bize Ulaş</h3>
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="e-posta">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" placeholder="numara">
+                </div>
+                <input type="submit" class="btn" value="Gönder">
+            </form>
+        </div>
+
+    </section>
+    <!-- contact end -->
+    <!-- footer start -->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input">
+            <button class="btn">Ara</button>
+        </div>
+        <div class="share">
+            <a href="https://www.facebook.com/grakgrakcargo" class="fab fa-facebook"></a>
+            <a href="https://twitter.com/grakgrakcargo" class="fab fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCxARoAu1nAuL3nENcNSoZHA" class="fab fa-youtube"></a>
+            <a href="https://www.linkedin.com/company/grakgrak-cargo/" class="fab fa-linkedin"></a>
+            <a href="https://www.instagram.com/grakgrakcargo/" class="fab fa-instagram"></a>
+            <a href="https://www.tiktok.com/@grakgrakcargo" class="fab fa-tiktok"></a>  
+        </div>
+
+        <div class="links">
+            <a href="">Anasayfa</a>
+            <a href="">Blog</a>
+            <a href="">Nasıl Kullanılır?</a>
+            <a href="">S.S.S</a>
+        </div>
+        <div class="credit" id="copy_right">
+            &copy;2022 Copyright
+        <a href="https://grakgrakcargo.com" class="GrakGrak" >GrakGrak Cargo | Powered by GrakGrak Cargo </a>
+        </div>
+    </section>
+
+    <!-- footer end --> 
   </body>
 </html>
+
