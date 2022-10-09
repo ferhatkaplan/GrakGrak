@@ -316,17 +316,17 @@ section {
 /* review end */
 /*indir start*/
 .indir .bilgi h1 {
-  font-size: 3rem;
+  font-size: 6rem;
   color: #d1552f;
 }
 
 .indir .bilgi h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #d1552f;
 }
 
 .indir .bilgi h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #d1552f;
 }
 /*indir end*/
@@ -383,15 +383,17 @@ section {
 /* contact end */
 /* footer start */
 
-.footer .search .btn {
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  margin-left: 1rem;
-}
+
 .footer {
   background-color: wheat;
   text-align: center;
+}
+
+.footer .search .btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
 }
 
 .footer .search {
@@ -401,7 +403,8 @@ section {
 }
 .footer .search .search-input {
   width: 15rem;
-  background-color: wheat;
+  padding: 1rem 2rem;
+  background-color: #d1552f;
   border-radius: 2rem;
 }
 .footer .share {
@@ -444,10 +447,9 @@ section {
 
 .footer .credit .GrakGrak {
   font-size: 2rem;
-  color: #ffc700;
+  color: #d1552f;
 }
 /* footer end */
-
 /*! responsive start*/
 @media (max-width: 991px) {
   html {
